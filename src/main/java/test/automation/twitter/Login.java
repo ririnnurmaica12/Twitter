@@ -5,9 +5,11 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Login {
     WebDriver driver = new ChromeDriver();
+    //WebDriver driver = new FirefoxDriver();
     LoginHelper loginHelper = new LoginHelper(driver);
 
     @Given("^I navigate to twitter page$")
@@ -30,8 +32,8 @@ public class Login {
         loginHelper.enter_password_as(password);
     }
 
-    @When("^I click login botton$")
-    public void i_click_login_botton() {
+    @When("^I click login button$")
+    public void i_click_login_button(){
         loginHelper.click_login_botton();
     }
 

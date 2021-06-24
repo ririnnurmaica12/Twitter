@@ -11,5 +11,4 @@ Feature: Login
     Examples:
       | username         | password      | result  |
       | 082139805022     | ririn1212     | Success |
-      | 082139805022     | dummyPassword | Failed  |
-      | unregisteredUser | dummyPassword | Failed  |
+
